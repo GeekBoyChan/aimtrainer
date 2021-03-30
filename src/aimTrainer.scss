@@ -1,0 +1,84 @@
+.wrapper > div {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #aaa;
+  padding: 10px;
+}
+
+.wrapper > div:nth-child(odd) {
+  background: #ddd;
+}
+
+//------FIRST DEMO--------
+
+.demoOne {
+  display: grid;
+  grid-template-columns: 75px 75px 75px;
+  grid-template-rows: 1fr 1fr 1fr;
+  // grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+//------SECOND DEMO--------
+
+.demoTwo {
+  display: grid;
+  grid-template-columns: 100px 150px;
+  grid-template-rows: 50px 75px 100px;
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+//--------------------
+
+.hello1 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  align-self: start;
+}
+
+.hello2 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  justify-self: end;
+}
+
+.hello3 {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  align-self: end;
+  justify-self: start;
+}
+
+.hello4 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  align-self: start;
+  justify-self: end;
+}
+
+.hello5 {
+  grid-column: 1/3;
+  grid-row-start: 1;
+}
+
+//   grid-column-end: 3;
+//   grid-column: 1/3;
+
+//------GRIDCEPTION--------
+
+.demoContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.demoOne {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.demoTwo {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
